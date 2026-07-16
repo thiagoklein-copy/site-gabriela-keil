@@ -8,7 +8,7 @@ import { WHATSAPP_URL } from "@/lib/constants";
 
 // TODO: replace with real photo of Dra. Gabriela and clinic space
 const HERO_MAIN =
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80";
+  "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85";
 
 export function Hero() {
   return (
