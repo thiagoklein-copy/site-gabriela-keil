@@ -6,10 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { WHATSAPP_URL } from "@/lib/constants";
 
-// TODO: replace with real photo of Dra. Gabriela and clinic space
-const HERO_MAIN =
-  "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85";
-
 export function Hero() {
   return (
     <section
@@ -85,15 +81,26 @@ export function Hero() {
 
         <Reveal delay={0.15} direction="left">
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-softer shadow-lift">
-              <Image
-                src={HERO_MAIN}
-                alt="Ambiente acolhedor de consultório para avaliação neuropsicológica"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 90vw, 45vw"
-                priority
-              />
+            <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-softer bg-gradient-to-br from-cream-dark via-cream to-olive/15 shadow-lift">
+              <div className="flex flex-col items-center gap-3 text-charcoal-soft">
+                <svg
+                  className="h-12 w-12"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.25}
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"
+                  />
+                </svg>
+                <p className="text-sm font-medium tracking-wide">
+                  Foto do consultório
+                </p>
+              </div>
               {/* Editable stat chip */}
               <div className="absolute bottom-6 right-4 rounded-full bg-white/95 px-4 py-2.5 text-sm font-medium text-charcoal shadow-soft backdrop-blur-sm md:bottom-10 md:right-8">
                 {/* TODO: update evaluation count with real number */}
