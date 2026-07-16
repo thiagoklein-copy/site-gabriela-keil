@@ -52,12 +52,11 @@ export function AboutIntro() {
                 licenciada pela The Parent Practice, de Londres. Meu objetivo é
                 sempre o mesmo: clareza, autonomia e cuidado.
               </p>
+              <p>
+                Meu trabalho é te ajudar a enxergar além do diagnóstico e
+                reconhecer suas potencialidades.
+              </p>
             </div>
-
-            <blockquote className="border-b-2 border-terracotta pb-2 font-serif text-xl italic leading-snug text-charcoal md:text-2xl">
-              &ldquo;Meu trabalho é te ajudar a enxergar além do diagnóstico —
-              e reconhecer suas potencialidades.&rdquo;
-            </blockquote>
 
             <div className="flex flex-wrap gap-2 pt-2">
               {CREDENTIALS.map((item) => (
